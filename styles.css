@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --f-all: "Manrope", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--f-all);
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+}
+
+.container {
+    min-height: 100vh;
+    padding-block: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* APPLICATION */
+
+.app {
+    width: 550px;
+    padding: 20px 45px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.079);
+}
+
+/* ADVICE TEXT */
+
+.advice-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.advice-text > h4 {
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 5px;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+/* ADVICE ITSELF */
+
+.advice-itself {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.advice-itself > p {
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+}
+
+/* ADVICE BUTTON */
+
+.advice-button {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advice-button-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advice-button-divider-mobile {
+    display: none;
+}
+
+.generate-button {
+    transform: translateY(52px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 3rem;
+    border: 0;
+    background-color: hsl(150, 100%, 66%);
+    cursor: pointer;
+    transition: box-shadow 300ms linear;
+}
+
+.generate-button:hover {
+    box-shadow: 0 0 35px hsl(150, 100%, 66%);
+}
