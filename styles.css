@@ -80,6 +80,8 @@ body {
 
 .advice-button-divider-mobile {
     display: none;
+    width: 100%;
+    object-position: center;
 }
 
 .generate-button {
@@ -121,8 +123,5 @@ body {
     }
     .advice-button-divider-desktop {
         display: none;
-    }
-    .advice-button {
-        overflow: hidden;
     }
 }
