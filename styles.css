@@ -99,3 +99,30 @@ body {
 .generate-button:hover {
     box-shadow: 0 0 35px hsl(150, 100%, 66%);
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+    .app {
+        width: 95%;
+        padding: 20px;
+    }
+    .advice-itself > p {
+        font-size: 1.3rem;
+    }
+    .advice-text > h4 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 512px) {
+    .advice-button-divider-mobile {
+        display: unset;
+    }
+    .advice-button-divider-desktop {
+        display: none;
+    }
+    .advice-button {
+        overflow: hidden;
+    }
+}
